@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <event-block any="1" sid="1417149316235663">
+            <conditions>
+                <condition id="3" name="Is button down" sid="8119158366138119" type="Gamepad">
+                    <param id="0" name="Gamepad">0</param>
+                    <param id="1" name="Button">14</param>
+                </condition>
+                <condition id="5" name="Compare axis" sid="2685845967016316" type="Gamepad">
+                    <param id="0" name="Gamepad">0</param>
+                    <param id="1" name="Axis">0</param>
+                    <param id="2" name="Comparison">2</param>
+                    <param id="3" name="Value">-25</param>
+                </condition>
+                <condition id="2" name="Key is down" sid="7794814378233846" type="Keyboard">
+                    <param id="0" name="Key">65 (A)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="4936816323726173" type="Rúmol">
+                    <param id="0" name="Control">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="8906310956179963">
+            <conditions>
+                <condition id="3" name="Is button down" sid="341401406882897" type="Gamepad">
+                    <param id="0" name="Gamepad">0</param>
+                    <param id="1" name="Button">15</param>
+                </condition>
+                <condition id="5" name="Compare axis" sid="2935045642745031" type="Gamepad">
+                    <param id="0" name="Gamepad">0</param>
+                    <param id="1" name="Axis">0</param>
+                    <param id="2" name="Comparison">4</param>
+                    <param id="3" name="Value">25</param>
+                </condition>
+                <condition id="2" name="Key is down" sid="5596979205589577" type="Keyboard">
+                    <param id="0" name="Key">68 (D)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="7771490208179469" type="Rúmol">
+                    <param id="0" name="Control">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="6455852867051592">
+            <conditions>
+                <condition id="3" name="Is button down" sid="8623652217419081" type="Gamepad">
+                    <param id="0" name="Gamepad">0</param>
+                    <param id="1" name="Button">12</param>
+                </condition>
+                <condition id="3" name="Is button down" sid="1264854659742646" type="Gamepad">
+                    <param id="0" name="Gamepad">0</param>
+                    <param id="1" name="Button">2</param>
+                </condition>
+                <condition id="2" name="Key is down" sid="5268728124285621" type="Keyboard">
+                    <param id="0" name="Key">87 (W)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="3023988159581449" type="Rúmol">
+                    <param id="0" name="Control">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2507538505541065">
+            <conditions>
+                <condition id="-4" name="Is outside layout" sid="74998461108564" type="Rúmol" />
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="4518867336602863" type="Rúmol">
+                    <param id="0" name="X">297</param>
+                    <param id="1" name="Y">106</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4203076682405498">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="2074004266920093" type="Rúmol">
+                    <param id="0" name="Object">snake</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="4483672228259841" type="Rúmol" />
+                <action id="-3" name="Set position" sid="2342270107472051" type="Rúmol">
+                    <param id="0" name="X">297</param>
+                    <param id="1" name="Y">106</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2442696807578685">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="7061833179121721" type="Rúmol">
+                    <param id="0" name="Object">grass</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="7558624947109662" type="Rúmol" />
+                <action id="-3" name="Set position" sid="5682622623625645" type="Rúmol">
+                    <param id="0" name="X">297</param>
+                    <param id="1" name="Y">106</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2276068682908431">
+            <conditions>
+                <condition id="-20" name="Is on mobile device" sid="1298949785476502" type="System" />
+            </conditions>
+            <actions />
+        </event-block>
+    </events>
+</c2eventsheet>
