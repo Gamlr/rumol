@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2project>
-    <name>New project</name>
+    <name>Rúmol</name>
     <description></description>
     <version>1.1.3</version>
     <author></author>
@@ -17,6 +17,7 @@
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
         <plugin author="Scirra" id="XML" version="1">XML</plugin>
         <plugin author="Scirra" id="gamepad" version="1">Gamepad</plugin>
+        <plugin author="Scirra" id="video" version="1">Video</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
@@ -199,6 +200,9 @@
         </object-type>
         <object-type name="WebSocket" sid="770285279463569">
             <plugin id="C2WebSocket" />
+        </object-type>
+        <object-type name="Video" sid="4293581222194694">
+            <plugin id="video" />
         </object-type>
     </object-folder>
     <families />
